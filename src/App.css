@@ -1,0 +1,213 @@
+/* Base Colors */
+:root {
+    --primary-blue: #0649E7;
+    --deep-blue: #022183;
+    --white: #FEFEFE;
+    --light-gray: #EBF1FF;
+    --black: #101010;
+  
+    --font-sora: 'Sora', sans-serif;
+    --font-dm-sans: 'DM Sans', sans-serif;
+  
+    --page-max-width: 1500px;
+    --border-radius: 20px;
+  }
+  
+  /* Base Typography */
+  h1 {
+    font-family: var(--font-sora);
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--black);
+  }
+  h2 {
+    font-family: var(--font-dm-sans);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--black);
+  }
+  h3 {
+    font-family: var(--font-dm-sans);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--black);
+  }
+  h4 {
+    font-family: var(--font-dm-sans);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+  }
+  p {
+    font-family: var(--font-dm-sans);
+    font-size: 18px;
+    color: var(--black);
+  }
+  small {
+    font-family: var(--font-dm-sans);
+    font-size: 16px;
+    color: var(--black);
+  }
+  
+  /* Layout Container */
+  .container {
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Buttons */
+  .button {
+    font-family: var(--font-dm-sans);
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .button--primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+  .button--primary:hover {
+    background-color: var(--deep-blue);
+  }
+  
+  .button--secondary {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    color: var(--deep-blue);
+  }
+  .button--secondary:hover {
+    background-color: var(--light-gray);
+  }
+  
+  /* Icon Button (e.g. arrow) */
+  .icon-button {
+    background: var(--white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+    stroke-width: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    border: none;
+    color: var(--deep-blue);
+  }
+  .icon-button:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+  
+  /* Logo Variants */
+  .logo-light {
+    color: var(--white);
+  }
+  .logo-dark {
+    color: var(--black);
+  }
+  .logo-blue {
+    color: var(--primary-blue);
+  }
+  
+  /* Rounded Corner Box */
+  .rounded-box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: var(--font-dm-sans);
+    font-size: 16px;
+  }
+  
+  /* Blur Box */
+  .blur-box {
+    backdrop-filter: blur(14px);
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background: rgba(255, 255, 255, 0.6);
+    margin: 20px 0;
+    font-family: var(--font-dm-sans);
+    font-size: 16px;
+    color: var(--black);
+  }
+  
+  /* Color Swatches */
+  .swatches {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .swatch {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Max Width Note Box */
+  .maxwidth-section p {
+    background: var(--light-gray);
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px;
+    color: var(--black);
+    font-family: var(--font-dm-sans);
+  }
+  
+  /* Responsive Utilities */
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    .button {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    .container {
+      padding: 0 15px;
+    }
+  }
+  
