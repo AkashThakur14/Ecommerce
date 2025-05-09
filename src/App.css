@@ -1,10 +1,18 @@
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Base Colors */
 :root {
-    --primary-blue: #0649E7;
-    --deep-blue: #022183;
-    --white: #FEFEFE;
-    --light-gray: #EBF1FF;
-    --black: #101010;
+  --primary-blue: #4F7CAC;
+  --deep-blue: #305F72;
+  --white: #FFFFFF;
+  --light-gray: #F5F7FA;
+  --black: #1F2937;
   
     --font-sora: 'Sora', sans-serif;
     --font-dm-sans: 'DM Sans', sans-serif;
@@ -211,3 +219,150 @@
     }
   }
   
+/* ================================================================================================ */
+
+ /* ===== Header Styling ===== */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Logo Image */
+.logo img {
+  max-height: 50px;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar List */
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+/* Navbar Links */
+.navbar-list .nav-link {
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--font-dm-sans);
+  font-size: 18px;
+  transition: color 0.3s ease;
+  position: relative; 
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar-list .nav-link:hover {
+  color: var(--primary-blue);
+}
+
+/* Login Button */
+.login-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--primary-blue);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-blue);
+  color: var(--white) !important;
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background-color: var(--deep-blue);
+}
+
+/* Cart Icon */
+.cart-trolley {
+  font-size: 24px;
+  color: var(--black);
+  transition: color 0.3s ease;
+}
+
+.cart-trolley:hover {
+  color: var(--primary-blue);
+}
+
+/* Cart Total Badge */
+.cart-total {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-hamburg {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================== media quries start form here ==================================== */
+
+@media (max-width: 768px) {
+
+  .menu-web {
+    display: none !important;
+  }
+
+  .menu-hamburg {
+    display: inline-block !important;
+  }
+
+  .menu-mobile {
+    display: block !important;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-blue);
+    z-index: 100;
+  }
+
+  .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a.nav-link
+   {
+      color: #fff !important;
+  }
+
+  .cart-total {
+    background-color: #fff;
+    color: #000;
+  }
+}
