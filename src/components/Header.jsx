@@ -31,7 +31,7 @@ export const Header = () => {
               <li><NavLink to="/cart" className="nav-link"><FiShoppingCart className='cart-trolley' /><span className='cart-total'>3</span></NavLink></li>
             </ul>
           </nav>
-          {/* Two buttons for open and close of menue */}
+          
           <div className="menu-hamburg">
             <button onClick={menuToogleButton}>
             <CgMenu  />

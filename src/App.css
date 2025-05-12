@@ -56,7 +56,10 @@
     font-size: 16px;
     color: var(--black);
   }
-  
+  a{
+    text-decoration: none;
+    color: var(--black);
+  }
   /* Layout Container */
   .container {
     max-width: var(--page-max-width);
@@ -317,6 +320,55 @@ header {
 }
 
 
+/* ============================ Hero section starts from here =================== */
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 60px 40px; */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-left-content {
+  flex: 1 1 500px;
+}
+
+.hero-left-content .into-data {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.hero-left-content h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.hero-left-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+.hero-left-content a {
+  color: #fff !important;
+}
+
+
+.hero-right-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right-image img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -370,4 +422,29 @@ header {
 .menu-mobile ul li {
     width: 100%;
 }
+
+
+ .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    /* padding: 40px 20px; */
+    gap: 0;
+  }
+
+  .hero-left-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-left-content p {
+    font-size: 15px;
+  }
+
+  .button.button--primary {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+  .hero-right-image {
+    margin-bottom: 30px;
+  }
 }
