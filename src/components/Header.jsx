@@ -21,7 +21,7 @@ export const Header = () => {
         </div>
 
         <div className="navbar">
-          <nav className={showMenu ? "menu-mobile" : "menu-web"}>
+          <nav  className={showMenu ? "menu-mobile" : "menu-web"}>
             <ul className='navbar-list'>
               <li><NavLink to="/" className="nav-link">Home</NavLink></li>
               <li><NavLink to="/about" className="nav-link">About</NavLink></li>
@@ -34,7 +34,7 @@ export const Header = () => {
           {/* Two buttons for open and close of menue */}
           <div className="menu-hamburg">
             <button onClick={menuToogleButton}>
-            <CgMenu />
+            <CgMenu  />
             </button>
 
           </div>
