@@ -16,8 +16,6 @@
   
     --font-sora: 'Sora', sans-serif;
     --font-dm-sans: 'DM Sans', sans-serif;
-  
-    --page-max-width: 1500px;
     --border-radius: 20px;
   }
   
@@ -62,7 +60,7 @@
   }
   /* Layout Container */
   .container {
-    max-width: var(--page-max-width);
+    max-width: 1500px;
     margin: 0 auto;
     padding: 40px 20px;
   }
@@ -371,7 +369,43 @@ header {
 }
 
 
+/* Service section form here  */
+.service-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
 
+.box {
+  flex: 1 1 200px;
+  max-width: 220px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
 
 /* ===================================== media quries start form here ==================================== */
 
@@ -446,5 +480,14 @@ header {
 
   .hero-right-image {
     margin-bottom: 30px;
+  }
+
+  .service-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    max-width: 90%;
   }
 }

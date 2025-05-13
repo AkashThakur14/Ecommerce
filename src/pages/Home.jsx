@@ -1,5 +1,6 @@
 import React from 'react'
 import { HeroSection } from '../components/HeroSection'
+import { Services } from '../components/Services'
 
 export const Home = () => {
   const data = {
@@ -8,10 +9,10 @@ export const Home = () => {
 
   return (
     <>
-      <div className="container">
+      
         <HeroSection myData = {data} />
+        <Services />
 
-      </div>
 
     </>
   )
