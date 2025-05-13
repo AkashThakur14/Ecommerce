@@ -8,13 +8,12 @@ export const Home = () => {
 }
 
   return (
-    <>
-      
+        <div>
         <HeroSection myData = {data} />
         <Services />
+</div>
 
 
-    </>
   )
 }
 
