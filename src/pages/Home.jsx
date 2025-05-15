@@ -4,14 +4,14 @@ import { Services } from '../components/Services'
 
 export const Home = () => {
   const data = {
-    sname:"Akash Store",
-}
+    sname: "Akash Store",
+  }
 
   return (
-        <div>
-        <HeroSection myData = {data} />
-        <Services />
-</div>
+    <>
+      <HeroSection myData={data} />
+      <Services />
+    </>
 
 
   )
