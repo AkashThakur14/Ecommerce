@@ -28,8 +28,8 @@ export const Footer = () => {
           <div className="col-four">
             <div className="contact">
               <h4>Contact Us</h4>
-              <strong>Phone:</strong> <a href="tel:+1234567890">9988385532</a><br />
-              <strong>Email:</strong> <a href="mailto:info@example.com">ak9988385532@gmail.com</a>
+              <strong>Phone:</strong> <a href="tel:9988385532">9988385532</a><br />
+              <strong>Email:</strong> <a href="mailto:ak9988385532@gmail.com">ak9988385532@gmail.com</a>
             </div>
             <div className="follow">
               <h4>Follow Us</h4>
