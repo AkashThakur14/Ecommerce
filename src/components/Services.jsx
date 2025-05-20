@@ -21,7 +21,7 @@ export const Services = () => {
 {/* end */}
 <div className='col-25'>
 <div className="box ">
-<figure><img src="/Images/24-hours.png" alt="24 hours" width='80px' height='80px'/></figure>
+<figure><img src="/Images/delivery.png" alt="24 hours" width='80px' height='80px'/></figure>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 </div>
 </div>

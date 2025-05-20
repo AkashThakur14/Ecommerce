@@ -9,11 +9,11 @@ export const Home = () => {
   }
 
   return (
-    <>
+    <main>
       <HeroSection myData={data} />
       <Services />
       <Trusted />
-    </>
+    </main>
 
 
   )
