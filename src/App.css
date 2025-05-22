@@ -406,6 +406,57 @@ header {
   width: 24px;
 }
 
+.error-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error-row img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.error-row h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.error-row p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.error-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.error-btn:hover {
+  background-color: #0056b3;
+}
+
 /* ========================== Media Queries ==================== */
 @media (max-width: 768px) {
 
@@ -529,5 +580,25 @@ header {
 
   .follow a {
     margin-bottom: 0.5rem;
+  }
+  .error-row h2 {
+    font-size: 1.5rem;
+  }
+
+  .error-row p {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+
+  .error-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+  .error-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+  .error-row img {
+    width: 200px;
   }
 }

@@ -11,7 +11,7 @@ export const Footer = () => {
           </div>
           <div className="col-two">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <form action="/" method='post'>
+            <form >
               <input type="email" name="email" placeholder='Subscribe Now' />
               <input type="submit" value="Subscribe" />
             </form>
