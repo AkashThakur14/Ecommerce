@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../context/Productcontext';
 
 export const About = () => {
+
+  const myName = useContext(AppContext);
+
   return (
-    <div>About</div>
+    <>
+    {myName}
+    <h1>About</h1>
+    
+    </>
   )
 }
 
