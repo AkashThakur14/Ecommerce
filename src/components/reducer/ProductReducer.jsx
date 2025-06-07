@@ -1,4 +1,4 @@
-export const productReducer = () => {
+export const productReducer = (state, action) => {
 
     // if(action.type === "SET_LOADING") {
     //     return{
@@ -21,7 +21,7 @@ export const productReducer = () => {
                 isLoading: true,
             };
 
-        case "SET_API_LOADING":
+        case "SET_API_DATA":
             const featureData = action.payload.filter((curElem) => {
                 return curElem.featured === true;
             })
