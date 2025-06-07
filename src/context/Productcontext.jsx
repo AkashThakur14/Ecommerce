@@ -8,27 +8,27 @@ export const AppContext = createContext();
 const API = "https://api.pujakaitem.com/api/products";
 
 const initialState = {
-isLoading: false,
-isError:false,
-products: [],
-featured:[]
+  isLoading: false,
+  isError: false,
+  products: [],
+  featured: []
 }
 
 export const AppProvider = ({ children }) => {
 
-  const [state,dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const getProducts = async (url) => {
-dispatch({type:"SET_LOADING"})
-   try {
-     const res = await axios.get(url);
-     const products = await res.data;
- 
-     dispatch({type:"SET_API_DATA", payload:products})
-   } catch (error) {
-    dispatch({type:"API_Error"})
-   }
- 
+    dispatch({ type: "SET_LOADING" })
+    try {
+      const res = await axios.get(url);
+      const products = await res.data;
+
+      dispatch({ type: "SET_API_DATA", payload: products })
+    } catch (error) {
+      dispatch({ type: "API_Error" })
+    }
+
   }
 
   useEffect(() => {
@@ -37,7 +37,7 @@ dispatch({type:"SET_LOADING"})
   }, [])
 
   return (
-    <AppContext.Provider value={{...state}}>
+    <AppContext.Provider value={{ ...state }}>
       {children}
     </AppContext.Provider>
   );
